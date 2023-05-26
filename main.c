@@ -34,6 +34,7 @@ int main(int argc, char **argv)
 
     while ((read_bytes = getline(&line, &nread, file)) != EOF)
     {
+        i = 0;
         line_num++;
 
         if (read_bytes <= 1 || line[0] == '\n')
