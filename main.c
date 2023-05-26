@@ -28,7 +28,7 @@ int main(int argc, char **argv)
     file = fopen(filename, "r");
     if (file == NULL)
     {
-        fprintf(stderr, "Error: Can't open file %s", filename);
+        fprintf(stderr, "Error: Can't open file %s\n", filename);
         exit(EXIT_FAILURE);
     }
 
@@ -69,8 +69,8 @@ int main(int argc, char **argv)
             }
 
             token = atoi(num_str);
-            op_func(&stack, op_code,  line_num);
         }
+        op_func(&stack, op_code,  line_num);
     }
     free(line);
     fclose(file);
