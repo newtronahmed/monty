@@ -15,6 +15,7 @@ stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num)
 
     instruction_t ops[] = {
         {"push", push},
+        {"pall", pall},
         {NULL, NULL}
     };
 
