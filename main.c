@@ -36,10 +36,9 @@ int main(int argc, char **argv)
     {
         line_num++;
 
-        if (read_bytes == 0)
+        if (read_bytes <= 1 || line[0] == '\n')
             continue;
-        if (read_bytes == 1)
-            continue;
+
         op_code = strtok(line, " \n");
         
         if (op_code == NULL)
