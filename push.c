@@ -1,5 +1,12 @@
-#include "main.h"
-
+#include "monty.h"
+/**
+ * push - push to stack
+ *
+ * @stack: stack
+ * @line_num: line number
+ *
+ * Return: newnode
+ */
 stack_t *push(stack_t **stack, unsigned int line_num __attribute__((unused)) )
 {
     stack_t *new_node;
