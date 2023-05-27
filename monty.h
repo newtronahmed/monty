@@ -58,10 +58,11 @@ typedef struct instruction_s
 /* Prototypes */
 stack_t *push(stack_t **stack, unsigned int line_num);
 stack_t *pall(stack_t **stack, unsigned int line_num);
-stack_t *pint(stack_t **stack, unsigned int line_number);
-stack_t *pop(stack_t **stack, unsigned int line_number);
-stack_t *swap(stack_t **stack, unsigned int line_number);
+stack_t *pint(stack_t **stack, unsigned int line_num);
+stack_t *pop(stack_t **stack, unsigned int line_num);
+stack_t *swap(stack_t **stack, unsigned int line_num);
 stack_t *nop(stack_t **stack, unsigned int line_num);
+stack_t *add(stack_t **stack, unsigned int line_num);
 void free_stack(stack_t **stack);
 stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num);
 #endif

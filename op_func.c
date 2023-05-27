@@ -11,24 +11,28 @@
 
 stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num)
 {
-    int i = 0;
+	int i = 0;
 
-    instruction_t ops[] = {
-        {"push", push},
-        {"pall", pall},
-        {"nop", nop},
-        {NULL, NULL}
-    };
+	instruction_t ops[] = {
+		{"push", push},
+		{"pall", pall},
+		{"nop", nop},
+		{"pint", pint},
+		{"pop", pop},
+		{"swap", swap},
+		{"add", add},
+		{NULL, NULL}
+	};
 
-    while(ops[i].opcode != NULL)
-    {
-        if (strcmp(ops[i].opcode, op_code) == 0)
-        {
-            return (ops[i]).f(stack, line_num);
-        }
-        i++;
-    }
-    fprintf(stderr, "L%d: unknown instruction %s\n", line_num, op_code);
+	while (ops[i].opcode != NULL)
+	{
+		if (strcmp(ops[i].opcode, op_code) == 0)
+		{
+			return ((ops[i]).f(stack, line_num));
+		}
+		i++;
+	}
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_num, op_code);
 	free_stack(stack);
 	exit(EXIT_FAILURE);
 }
