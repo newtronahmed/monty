@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 		i = 0;
 		line_num++;
 
-		if (read_bytes <= 1 || line[0] == '\n')
+		if (read_bytes <= 1 || line[0] == '\n' || line[0] == '#')
 			continue;
 
 		op_code = strtok(line, " \n");
