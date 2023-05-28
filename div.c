@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * div - div top 2 elements
+ * _div - div top 2 elements
  * @stack: - stack
  * @line_num: - line number
  *
