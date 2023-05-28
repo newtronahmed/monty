@@ -2,8 +2,8 @@
 
 /**
  * sub - subtract top 2 elements
- * @stack - stack
- * @line_num - line number
+ * @stack: - stack
+ * @line_num: - line number
  *
  * Return: stack
  */

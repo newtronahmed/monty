@@ -3,8 +3,8 @@
 /**
  * pint - prints the value at the top of the stack
  *
- * @stack - stack
- * @line_num - line number
+ * @stack: - stack
+ * @line_num: - line number
  *
  * Return: void
  */

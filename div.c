@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
- * div - subtract top 2 elements
- * @stack - stack
- * @line_num - line number
+ * div - div top 2 elements
+ * @stack: - stack
+ * @line_num: - line number
  *
  * Return: stack
  */

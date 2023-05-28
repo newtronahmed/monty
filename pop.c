@@ -2,8 +2,8 @@
 /**
  * pop - remove the top element of stack
  *
- * @stack - stack
- * @line_num - line number
+ * @stack: - stack
+ * @line_num: - line number
  *
  * Return: stack
  */
