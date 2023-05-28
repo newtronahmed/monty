@@ -21,6 +21,8 @@ stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num)
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
+		{"sub", sub},
+		{"div", _div},
 		{NULL, NULL}
 	};
 

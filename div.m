@@ -1,5 +1,6 @@
 push 1
 push 2
-#ignore
+push 4
+push 2
+div
 pall
-#ignore2
