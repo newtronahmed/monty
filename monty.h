@@ -65,6 +65,8 @@ stack_t *nop(stack_t **stack, unsigned int line_num);
 stack_t *add(stack_t **stack, unsigned int line_num);
 stack_t *sub(stack_t **stack, unsigned int line_num);
 stack_t *_div(stack_t **stack, unsigned int line_num);
+stack_t *mul(stack_t **stack, unsigned int line_num);
+stack_t *mod(stack_t **stack, unsigned int line_num);
 void free_stack(stack_t **stack);
 stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num);
 #endif

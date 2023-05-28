@@ -1,21 +1,21 @@
 #include "monty.h"
 
 /**
- * div - subtract top 2 elements
+ * mod - mod top 2 elements
  * @stack - stack
  * @line_num - line number
  *
  * Return: stack
  */
-stack_t *_div(stack_t **stack, unsigned int line_num)
+stack_t *mod(stack_t **stack, unsigned int line_num)
 {
 	stack_t *head;
-	int div = 0;
+	int mod = 0;
 
 	head = *stack;
 	if (head == NULL || head->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short\n", line_num);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_num);
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
@@ -25,12 +25,12 @@ stack_t *_div(stack_t **stack, unsigned int line_num)
 		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
-	div = (head->next->n) / (head->n);
+	mod = (head->next->n) % (head->n);
 	*stack = (*stack)->next;
 	free(head);
 
 	if (*stack != NULL)
 		(*stack)->prev = NULL;
-	(*stack)->n = div;
+	(*stack)->n = mod;
 	return (*stack);
 }

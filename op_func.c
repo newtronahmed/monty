@@ -23,6 +23,8 @@ stack_t *op_func(stack_t **stack, char *op_code, unsigned int line_num)
 		{"add", add},
 		{"sub", sub},
 		{"div", _div},
+		{"mul", mul},
+		{"mod", mod},
 		{NULL, NULL}
 	};
 
